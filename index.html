@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Evaluate a Business - FINAN I Unit 2</title>
+    <style>
+        @media print {
+            body {
+                max-width: 100%;
+                margin: 0.4in 0.5in;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.65;
+            color: #2c3e50;
+            background: #f9f7f4;
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 45px 60px 45px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #059669;
+            color: #ffffff;
+            padding: 8px 16px;
+            z-index: 100;
+            font-size: 0.95em;
+            text-decoration: underline;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        *:focus-visible {
+            outline: 3px solid #059669;
+            outline-offset: 2px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+
+        header {
+            margin-bottom: 45px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #059669;
+        }
+
+        h1 {
+            font-size: 2.6em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #545454;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .intro {
+            background: #ffffff;
+            padding: 28px 30px;
+            border-radius: 6px;
+            margin-bottom: 40px;
+            border-left: 4px solid #059669;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .intro p {
+            font-size: 1.05em;
+            line-height: 1.7;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-top: 40px;
+            margin-bottom: 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8dfd1;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .factor-box {
+            background: #ffffff;
+            padding: 22px 26px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+            border-left: 4px solid #059669;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .factor-box h3 {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #059669;
+            margin-bottom: 10px;
+        }
+
+        .factor-box p {
+            font-size: 0.98em;
+            line-height: 1.6;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .factor-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .factor-box strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        .example {
+            background: #f0f9ff;
+            padding: 15px 18px;
+            border-radius: 4px;
+            margin-top: 12px;
+            font-size: 0.95em;
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .example strong {
+            color: #1e50a0;
+        }
+
+        .warning-box {
+            background: #fef3e7;
+            border: 2px solid #f4a460;
+            border-radius: 6px;
+            padding: 20px 24px;
+            margin: 30px 0;
+        }
+
+        .warning-box h3 {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #9a5420;
+            margin-bottom: 10px;
+        }
+
+        .warning-box p {
+            font-size: 0.98em;
+            line-height: 1.6;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .warning-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            font-size: 0.98em;
+            line-height: 1.6;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>How to Evaluate a Business</h1>
+        <p class="subtitle">A practical guide to assessing whether a business is healthy</p>
+    </header>
+
+    <main id="main-content">
+
+    <div class="intro">
+        <p>When you finish analyzing Sunrise Cafe, you will need to answer: <strong>Is this a good business?</strong> This resource shows you how real business analysts approach that question.</p>
+        <p>Important: You are working with limited data in the bootcamp. That is intentional. Part of business analysis is recognizing what you know, what you do not know, and what additional information you would need to make a complete decision.</p>
+    </div>
+
+    <section aria-label="What real analysts look at">
+    <h2>What Real Analysts Look At</h2>
+
+    <div class="factor-box">
+        <h3>1. Revenue: Is Money Coming In?</h3>
+        <p><strong>What it is:</strong> Total sales. How much money the business brings in from selling products or services.</p>
+        <p><strong>What to look for:</strong> Is revenue growing, stable, or declining? How does it compare to similar businesses? For a small cafe, $35,000/month in revenue might sound good, but is that typical for coffee shops in this location?</p>
+        <div class="example">
+            <strong>Good analysis:</strong> &ldquo;Moonlight Cafe generates approximately $35,000 in monthly revenue. This is consistent with industry benchmarks for small independent coffee shops.&rdquo;<br><br>
+            <strong>Weak analysis:</strong> &ldquo;They make a lot of money.&rdquo;
+        </div>
+    </div>
+
+    <div class="factor-box">
+        <h3>2. Costs: What Does It Take to Run This?</h3>
+        <p><strong>What it is:</strong> All expenses needed to operate. Rent, wages, ingredients, utilities, etc.</p>
+        <p><strong>What to look for:</strong> How much of each revenue dollar gets eaten by costs? A cafe might have $35,000 in revenue, but if costs are $33,500, there is almost no profit left.</p>
+        <div class="example">
+            <strong>The key calculation:</strong> Profit = Revenue - Costs<br>
+            <strong>Why it matters:</strong> Revenue alone is meaningless. A business with $1 million in revenue and $1.1 million in costs is losing money.
+        </div>
+    </div>
+
+    <div class="factor-box">
+        <h3>3. Profit Margin: How Efficient Is This Business?</h3>
+        <p><strong>What it is:</strong> Profit as a percentage of revenue. Formula: (Profit / Revenue) &times; 100</p>
+        <p><strong>What to look for:</strong> Different industries have different typical margins. Grocery stores operate on 1&ndash;3% margins. Software companies might have 20&ndash;30%. Coffee shops typically run 5&ndash;15%.</p>
+        <div class="example">
+            <strong>Good analysis:</strong> &ldquo;Moonlight Cafe has a 4% profit margin, which is below the typical range for independent coffee shops and leaves little room for error.&rdquo;<br><br>
+            <strong>What this tells you:</strong> The business is marginally viable but not robust. Any increase in rent or ingredient costs could eliminate profit entirely.
+        </div>
+    </div>
+
+    <div class="factor-box">
+        <h3>4. Momentum: Is This Getting Better or Worse?</h3>
+        <p><strong>What it is:</strong> Trends over time. Are sales growing? Are costs rising faster than revenue?</p>
+        <p><strong>What to look for:</strong> You would want to see several months or years of data. Is January revenue higher than last January? Are ingredient costs stable or spiking?</p>
+        <div class="example">
+            <strong>In the bootcamp:</strong> You only have 2 weeks of data, so you cannot assess momentum. This is a limitation you should recognize: &ldquo;With only 2 weeks of data, I cannot determine if the business is growing or declining.&rdquo;
+        </div>
+    </div>
+
+    <div class="factor-box">
+        <h3>5. Strategy &amp; Risk: What Could Go Right or Wrong?</h3>
+        <p><strong>What it is:</strong> Qualitative factors that require understanding the business context.</p>
+        <p><strong>What to look for:</strong></p>
+        <ul>
+            <li><strong>Competition:</strong> Is Starbucks opening across the street?</li>
+            <li><strong>Location:</strong> Is foot traffic stable or declining?</li>
+            <li><strong>Supplier risk:</strong> What if coffee bean prices double?</li>
+            <li><strong>Growth potential:</strong> Could they expand to catering or a second location?</li>
+        </ul>
+        <div class="example">
+            <strong>In the bootcamp:</strong> You do not have this information. Recognize the gap: &ldquo;To fully assess this business, I would want to know about local competition and whether the neighborhood is growing or declining.&rdquo;
+        </div>
+    </div>
+
+    <div class="factor-box">
+        <h3>6. Assets &amp; Debts: What Do They Own and Owe?</h3>
+        <p><strong>What it is:</strong> The business&rsquo;s balance sheet. Cash on hand, equipment owned, loans owed.</p>
+        <p><strong>What to look for:</strong> Does the cafe own its equipment or lease it? Do they have debt? How much cash reserve do they have for slow months?</p>
+        <div class="example">
+            <strong>Why it matters:</strong> A profitable business can still fail if it runs out of cash. You will learn this in Unit 6 when studying Silicon Valley Bank, which was profitable on paper but collapsed when deposits fled.
+        </div>
+    </div>
+    </section>
+
+    <section aria-label="Valuation and example analyses">
+    <div class="warning-box">
+        <h3>Valuation: Is the Price Right?</h3>
+        <p><strong>What it is:</strong> If you were buying this business (or stock in a company), is the asking price fair based on its financial performance?</p>
+        <p><strong>For this course:</strong> We are making a big simplifying assumption that the price is right and the valuation is fair. You will focus on whether the business itself is healthy (profitable, growing, well-managed) without worrying about whether the stock price is too high or too low.</p>
+        <p><strong>Why we are skipping this:</strong> Valuation is complex and involves future projections, risk assessment, and comparison to other investment options. The entire Investments course (FINAN III) covers this. For now, assume: <strong>good business = good investment, bad business = bad investment.</strong></p>
+    </div>
+
+    <div class="factor-box">
+        <h3>Example Analysis (Strong)</h3>
+        <p>&ldquo;Moonlight Cafe generates approximately $35,000 in monthly revenue with $33,500 in costs, yielding a 4% profit margin. This margin is below the typical range for independent coffee shops and leaves little cushion for rising costs. To fully assess this business, I would want to see revenue trends over 6&ndash;12 months to determine if sales are stable or declining, and know whether the cafe has debt obligations that could pressure cash flow.&rdquo;</p>
+    </div>
+
+    <div class="factor-box">
+        <h3>Example Analysis (Adequate)</h3>
+        <p>&ldquo;Moonlight Cafe makes $1,500 in monthly profit on $35,000 in revenue. This is a 4% profit margin. The business is marginally profitable, which means it is viable but any increase in costs could eliminate the profit.&rdquo;</p>
+    </div>
+
+    <div class="factor-box">
+        <h3>Example Analysis (Weak)</h3>
+        <p>&ldquo;The cafe sells a lot of coffee and makes money, so it is a good business.&rdquo;</p>
+        <p style="margin-top: 10px; color: #b91c1c;"><strong>Why this is weak:</strong> No specific numbers, no recognition of margin analysis, does not demonstrate understanding of the relationship between revenue, costs, and profitability.</p>
+    </div>
+    </section>
+
+    </main>
+</body>
+</html>
